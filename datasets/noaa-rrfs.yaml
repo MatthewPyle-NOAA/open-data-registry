@@ -33,9 +33,18 @@ Description: |
   Hawaii: `rrfs.t00z.prslev.2p5km.f002.hi.grib2`
   Puerto Rico: `rrfs.t00z.prslev.2p5km.f002.pr.grib2`
 
-  <br/><br/>
+  <br/>
 
-  We also provide prototype RRFSv1 ensemble output and products. Output is available for 00, 06, 12, and 18 UTC cycles, and is organized by cycle date and cycle hour. For example, `rrfs_a/rrfsens.20260115/00/m001` contains the forecast from member 1, and `rrfs_a/refs.20260115/00/enspost_timelag` contains the combined ensemble products.
+  There also is a new "2dfld" file type that contains non-isobaric and non-native level fields.  Many of these fields in the "2dfld" file used to be in the "prslev" file until recently.  The filenames are of this form:
+  `rrfs.t12z.2dfld.3km.f018.conus.grib2`
+  These exist for all output grids listed above for the "prslev" output type.
+
+  
+  <br/>
+    <br/>
+
+
+  We also provide prototype RRFSv1 ensemble output and products. Output is available for 00, 06, 12, and 18 UTC cycles, and is organized by cycle date and cycle hour. For example, `rrfs_a/rrfsens.20260115/00/m001` contains the forecast from member 1, and `rrfs_a/refs.20260115/00/enspost` contains the combined ensemble products.
 
   The set of files that will be available operationally over NOMADS (and which most users should use rather than the rrfs_a/ products) is under the rrfs_public/ subdirectory:
 
